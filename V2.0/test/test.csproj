@@ -32,10 +32,12 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="mailinblue, Version=1.0.5386.24360, Culture=neutral, processorArchitecture=x86">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\mailinblue\bin\Debug\mailinblue.dll</HintPath>
-    </Reference>
+  <ItemGroup>
+    <ProjectReference Include="..\mailinblue\mailinblue.csproj">
+      <Project>{6e918cdb-2edd-481a-a1e2-82aba20f71eb}</Project>
+      <Name>mailinblue</Name>
+    </ProjectReference>
+  </ItemGroup>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Core">
